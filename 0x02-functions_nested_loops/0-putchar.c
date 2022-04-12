@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * main - prints _putchar
@@ -8,14 +8,16 @@
  * Return: 0 (Success)
  */
 
-void print_alphabet(void)
+int main(void)
 {
-	char c ='a';
+	char text[10] = "_putchar";
+	int i = 0;
 
-	while (c <= 'z')
+	for (i = 0; i < 9; i++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(text[i]);
 	}
 	_putchar('\n');
+
+	return (0);
 }
